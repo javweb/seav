@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+body{ padding:0; margin:0; font-family:"微软雅黑"; font-size:14px; line-height:170%; color:#fff; text-align:center; background:#1a3163;}
+h1,h2,h3,h4,h5,h6,p,ul,ol,li,from{margin:0; padding:0; list-style:none;}
+
+img{border:none;}
+hr{clear:both; border:none; border-bottom:1px #1a3163 solid; margin:0px 40px;}
+
+a:link,a:visited{ text-decoration:none; color:#fff;}
+a:hover{text-decoration:underline;}
+.redtext{color:#fe0014;}
+
+/* head */
+.head{border-top:20px #333333 solid;}
+.logo{ height:107px; background:#e5e9f3 url(logo.png) no-repeat center center;}
+.permalink{min-height:40px; line-height:40px;}
+.permalink a{ background:url(icon-hand.png) no-repeat left center; padding-left:25px; font-size:18px; color:#fe0014;}
+
+/* 主体区域 */
+.mainbox{background:#e5e9f3; padding:40px 0 25px 0;}
+.main{ max-width:960px; _width:960px; margin:0 auto; background:#c1c8dc;}
+.main-t{ max-width:960px; margin:0 auto; height:46px; line-height:46px; background:#1a3163;}
+.weblist{padding:30px 40px;}
+.weblist ul {margin-left:-5%;}
+.weblist ul li{width:45%; _width:40%; line-height:45px; float:left; background:#1a3163; margin-bottom:18px; margin-left:5%; _margin-left:3%;}
+.info{ clear:both; color:#333333; font-size:16px; padding:10px; margin:0 40px;}
+
+/* 广告区域 */
+.ad-main{ width:100%; margin:0 auto; padding:0 0 20px 0;  background:#e5e9f3;}
+.ad-banner{max-width:960px; _width:960px; margin:0 auto;}
+.ad-banner img{width:100%; height:auto;}
+
+/* 页脚 */
+.statement{  background:#333333;}
+.statement p{ min-height:100px; padding:10px; font-size:12px; line-height:20px;}
+.copyright{line-height:30px;}
+
+@media (max-width:768px){ 
+  .permalink a{ display:inline-block; clear:both;}
+  .mainbox{  padding:20px 5px 20px 5px;}
+  .weblist ul li{line-height:30px;}
+  .weblist ul li a{display:block;}
+  .info{font-size:14px;}
+  .ad-main{padding-bottom:10px;}
+}
+
+@media (max-width:480px){ 
+    .head{border-top:10px #333333 solid;}
+    .logo{ height:70px; background:#e5e9f3 url(logo.png) no-repeat center center;}
+  .permalink{min-height:30px; line-height:30px;}
+  .permalink a{ display:inline-block; clear:both;}
+  .mainbox{  padding:10px 5px 10px 5px;}
+  .weblist{padding:15px 10px;}
+  .weblist ul {margin-left:-2%;}
+  .weblist ul li{ width:48%; line-height:30px; margin-left:2%;}
+  .weblist ul li a{display:block;}
+  .info{font-size:14px; margin:0 5px;}
+  .ad-main{padding-bottom:10px;}
+  .ad-banner{ padding:0px 5px;}
+  hr{margin:0 10px;}
+}
+@media (max-width:360px) and (min-width:240px) { 
+    .head{min-width:325px;}
+    .info{font-size:12px;}
+  .hiddle360{display:none;}
+}
